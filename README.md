@@ -44,7 +44,7 @@ FROM
 
 Write a SQL query to list the users (including user_id and name) that haven’t got any orders.
 
-**Please see `SQL/SQL_Q1.sql`**
+**Please see `SQL/SQL_Q2.sql`**
 
 ```sql
 SELECT
@@ -58,6 +58,8 @@ WHERE
 
 ### Question 3: 
 Write a SQL query to list the users that have orders greater than £100. Include user_id, name, and the total number of orders they have done including those less than £100.
+
+**Please see `SQL/SQL_Q3.sql`**
 
 ```sql
 SELECT
