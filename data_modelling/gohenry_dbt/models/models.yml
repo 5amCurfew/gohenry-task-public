@@ -1,0 +1,55 @@
+version: 2
+
+models:
+  - name: stg_campaign_statistics
+    description: Performance metrics per campaign (including impressions, clicks and conversions)
+    columns:
+      - name: campaign_id
+        description: Identifier of the campaign
+        tests:
+          - not_null
+          - relationships:
+              to: ref('stg_campaigns')
+              field: id
+
+      - name: creative_id
+        description: Identifier of the creative
+        tests:
+          - not_null
+          - relationships:
+              to: ref('stg_creatives')
+              field: id
+
+      - name: postcode
+        description: Postcode recorded for given period.
+        tests:
+          - not_null
+
+  - name: stg_campaigns
+    description: Campaign details
+    columns:
+      - name: id
+        description: Identifier of the campaign
+        tests:
+          - not_null
+
+      - name: created_at
+        description: Timestamp of the date the campaign was created
+        tests:
+          - not_null
+          - relationships:
+              to: ref('stg_creatives')
+              field: id
+
+      - name: created_at_date
+        description: Date of the date the campaign was created
+        tests:
+          - not_null
+
+  - name: stg_creatives
+    description: Creative details
+    columns:
+      - name: id
+        description: Identifier of the creative
+        tests:
+          - not_null

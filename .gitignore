@@ -1,0 +1,5 @@
+api/api_venv
+api-client/client_venv
+api-client/__pycache__
+api-client/.env
+data_modelling/venv

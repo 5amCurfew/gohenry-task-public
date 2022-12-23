@@ -1,0 +1,12 @@
+gohenry:
+  target: dev
+  outputs:
+    dev:
+      type: postgres
+      host: localhost
+      user: gohenry
+      password: gohenry
+      port: 5432
+      dbname: analytics
+      schema: campaigns
+      threads: 4

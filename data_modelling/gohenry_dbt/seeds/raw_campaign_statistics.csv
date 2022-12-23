@@ -1,0 +1,3 @@
+campaign_id,creative_id,start,end,impressions,clicks,conversions,cost,currency,device
+12236567,93962252,2021-01-01T00:00:00,2021-02-01T00:00:00,100,10,5,1.4,GBP,mobile
+12236589,93962260,2021-01-01T00:00:00,2021-02-01T00:00:00,88,9,3,0.8,USD,desktop
